@@ -1,0 +1,80 @@
+[
+    {
+        "type": "text",
+        "name": "FirstName",
+        "placeholder": "Alejandro",
+        "label": "First Name",
+        "value": "Luis",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "min",
+                "value": 2
+            },
+            {
+                "type": "onlyLetters"
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Montilla",
+        "label": "Last Name",
+        "value": "Escalona",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "max",
+                "value": 15
+            },
+            {
+                "type": "onlyLetters"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "test@gmail.conm",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+                "type": "email"
+            },
+            {
+                "type": "required"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "label": "Call of Duty"
+            },
+            {
+                "id": 2,
+                "label": "FIFA"
+            },
+            {
+                "id": 3,
+                "label": "Mario Galaxy"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    }
+]
